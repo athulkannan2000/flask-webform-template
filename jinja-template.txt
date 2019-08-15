@@ -1,0 +1,18 @@
+$ python3
+
+>>> from jinja2 import Template
+>>>
+>>> t = Template("NAME : {{ name }}")
+>>>
+>>> t.render(name='Python Flask jinja')
+NAME : Python Flask jinja  # OUTPUT
+>>>
+
+# more advanced
+
+>>> from jinja2 import Template
+>>>
+>>> Template("{{ 10+3 }}").render()
+'13'    # OUTPUT
+      # It can take any kind of values as input such as int, float, String, Tuple, List then give correspontin output.
+       Strings can be in single quotes.
